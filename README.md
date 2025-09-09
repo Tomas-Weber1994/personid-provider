@@ -21,7 +21,7 @@ For simplicity, this mock service:
 
 ### GET `/api/v1/person-id`
 
-Returns all valid person IDs in JSON format:
+Returns all valid person IDs in JSON format (example):
 
 ```json
 {
@@ -31,7 +31,6 @@ Returns all valid person IDs in JSON format:
     "cN1vZ8pE5sYx",
     "tQdG2kP3mJfB",
     "iM5sO6tXcW7v",
-    "rU8nA9eT2bYh",
-    ...
+    "rU8nA9eT2bYh"
   ]
 }
