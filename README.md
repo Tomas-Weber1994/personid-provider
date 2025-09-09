@@ -1,10 +1,9 @@
-# Person ID Provider (Mock Certification Authority)
+# Person ID Provider (Helper App for Genesis Resources)
 
 ## Overview
 
-This is a **helper application** that simulates an external certification authority API for person IDs.
-
-It is **not a production service** – it only provides a static list of valid person IDs to be used by the main application (`genesis-resources`) for testing and development purposes.
+This is a **helper application** for the main project `genesis-resources`.  
+It simulates an external certification authority API for person IDs, providing a static list of valid IDs for testing and development purposes.
 
 ---
 
