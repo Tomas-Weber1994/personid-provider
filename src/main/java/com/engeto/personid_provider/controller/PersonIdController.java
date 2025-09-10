@@ -1,5 +1,6 @@
 package com.engeto.personid_provider.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,6 +12,7 @@ import java.util.Map;
  * Simulated certification authority API.
  * In reality, valid person IDs would come from an external service.
  */
+@Slf4j
 @RestController
 @RequestMapping("/api/v1/person-id")
 public class PersonIdController {
@@ -40,6 +42,8 @@ public class PersonIdController {
 
     @GetMapping
     public Map<String, List<String>> getValidIds() {
-        return Map.of("validPersonIds", validIds);
+        Map<String, List<String>> response = Map.of("validPersonIds", validIds);
+        log.info("PersonId API returned {} IDs", validIds.size());
+        return response;
     }
 }
