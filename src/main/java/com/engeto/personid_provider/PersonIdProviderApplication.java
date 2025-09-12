@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PersonidProviderApplication {
+public class PersonIdProviderApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PersonidProviderApplication.class, args);
+		SpringApplication.run(PersonIdProviderApplication.class, args);
 	}
 
 }
